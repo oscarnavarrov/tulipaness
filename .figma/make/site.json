@@ -1,0 +1,10 @@
+{
+  "description": "Create stunning, animated designs featuring tulips and a beautiful moon in a starry fantasy sky, perfect for expressing creativity and beauty.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
