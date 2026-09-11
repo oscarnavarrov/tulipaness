@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400;1,600&family=Crimson+Pro:ital,wght@0,300;0,400;1,300;1,400&display=swap');
+@import 'tailwindcss';
+
+html,
+body,
+#root {
+  height: 100%;
+  overflow: hidden;
+}
+
+@keyframes twinkle {
+  0%, 100% { opacity: 0.2; transform: scale(0.8); }
+  50% { opacity: 1; transform: scale(1.2); }
+}
+
+@keyframes shoot {
+  0% { transform: translateX(0) translateY(0) rotate(-35deg); opacity: 1; }
+  100% { transform: translateX(300px) translateY(200px) rotate(-35deg); opacity: 0; }
+}
+
+@keyframes moonGlow {
+  0%, 100% { box-shadow: 0 0 60px 20px rgba(255,240,180,0.3), 0 0 120px 60px rgba(255,220,100,0.15); }
+  50% { box-shadow: 0 0 80px 30px rgba(255,240,180,0.5), 0 0 160px 80px rgba(255,220,100,0.25); }
+}
+
+@keyframes floatPetal {
+  0% { transform: translateY(0) translateX(0) rotate(0deg); opacity: 0.9; }
+  25% { transform: translateY(-30px) translateX(15px) rotate(45deg); }
+  50% { transform: translateY(-10px) translateX(30px) rotate(90deg); opacity: 0.6; }
+  75% { transform: translateY(20px) translateX(15px) rotate(135deg); }
+  100% { transform: translateY(100vh) translateX(40px) rotate(180deg); opacity: 0; }
+}
+
+@keyframes stemGrow {
+  0% { transform: scaleY(0); transform-origin: bottom; }
+  100% { transform: scaleY(1); transform-origin: bottom; }
+}
+
+@keyframes bloomOpen {
+  0% { transform: scaleY(0) scaleX(0.3); opacity: 0; transform-origin: bottom center; }
+  60% { transform: scaleY(1.1) scaleX(1.05); opacity: 1; }
+  100% { transform: scaleY(1) scaleX(1); opacity: 1; transform-origin: bottom center; }
+}
+
+@keyframes sway {
+  0%, 100% { transform: rotate(-2deg); transform-origin: bottom center; }
+  50% { transform: rotate(2deg); transform-origin: bottom center; }
+}
+
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateY(40px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes shimmer {
+  0%, 100% { opacity: 0.7; }
+  50% { opacity: 1; }
+}
+
+@keyframes drift {
+  0%, 100% { transform: translateX(0) translateY(0); }
+  33% { transform: translateX(8px) translateY(-5px); }
+  66% { transform: translateX(-5px) translateY(4px); }
+}
+
+@keyframes heartbeat {
+  0%, 100% { transform: scale(1); }
+  14% { transform: scale(1.05); }
+  28% { transform: scale(1); }
+  42% { transform: scale(1.08); }
+  70% { transform: scale(1); }
+}
+
+@keyframes cloudDrift {
+  0%, 100% { transform: translateX(0); opacity: 0.12; }
+  50% { transform: translateX(20px); opacity: 0.2; }
+}
+
+@keyframes moteFloat {
+  0% { transform: translateY(0) translateX(0); opacity: 0; }
+  20% { opacity: 0.8; }
+  80% { opacity: 0.6; }
+  100% { transform: translateY(-120px) translateX(30px); opacity: 0; }
+}
